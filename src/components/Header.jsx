@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../assets/logo.svg'
+import { useState } from 'react';
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                     </a>
                 </div>
                 <nav className='header-menu'>
-                    <div className='header-menu-wrapper'>
+                    <div className='header-menu-wrapper desktop-menu'>
                         <a className='header-menu-item' href='#experience'>Work Experience</a>
                         <a className='header-menu-item' href='#education'>Education</a>
                         <a className='header-menu-item' href='#skills'>Skills</a>
