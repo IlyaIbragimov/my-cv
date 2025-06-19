@@ -3,6 +3,13 @@ import logo from '../assets/logo.svg'
 import { useState } from 'react';
 
 const Header = () => {
+
+    const [mobileOpen, setMobileOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileOpen(!mobileOpen);
+    }
+
     return (
      <>
         <header className='header'>
@@ -25,6 +32,19 @@ const Header = () => {
                     ☰
                 </div>
             </div>
+
+            {mobileOpen && (
+             <>
+                <div className="mobile-menu">
+                    <a href="#experience" onClick={toggleMobileMenu}>Work Experience</a>
+                    <a href="#education" onClick={toggleMobileMenu}>Education</a>
+                    <a href="#skills" onClick={toggleMobileMenu}>Skills</a>
+                    <a href="#projects" onClick={toggleMobileMenu}>Projects</a>
+                    <a href="#contacts" onClick={toggleMobileMenu}>Contacts</a>
+                </div>
+             </>
+         
+        )}
         </header>
      </>
  );
