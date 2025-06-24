@@ -38,13 +38,13 @@
 
 .desktop-menu a {
   color: #61dafb;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
   padding: 0 10px;
 }
 
 .desktop-menu a:hover {
   color: #21a1f1;
+  transform: scale(1.2);
 }
 
 .burger {
@@ -86,11 +86,12 @@
 .mobile-menu a {
   font-size: 1.5rem;
   color: #61dafb;
-  transition: color 1s ease;
+  transition: color 1s ease, transform 0.2s ease;
 }
 
 .mobile-menu a:hover {
   color: #21a1f1;
+  transform: scale(1.1);
 }
 
 /*reponsive */
