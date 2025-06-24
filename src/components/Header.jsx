@@ -29,13 +29,12 @@ const Header = () => {
                     </div>
                 </nav>
                 <div className='burger' onClick={()=> toggleMobileMenu()}>
-                    ☰
+                    {mobileOpen ? '✕' : '☰'}
                 </div>
             </div>
 
-            {mobileOpen && (
              <>
-                <div className="mobile-menu">
+                <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
                     <a href="#experience" onClick={toggleMobileMenu}>Work Experience</a>
                     <a href="#education" onClick={toggleMobileMenu}>Education</a>
                     <a href="#skills" onClick={toggleMobileMenu}>Skills</a>
@@ -43,8 +42,7 @@ const Header = () => {
                     <a href="#contacts" onClick={toggleMobileMenu}>Contacts</a>
                 </div>
              </>
-         
-        )}
+      
         </header>
      </>
  );
