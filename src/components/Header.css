@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  background-color: #1e1e2f;
+ 
 }
 
 .header-wrapper{
@@ -34,16 +34,17 @@
 .desktop-menu {
   display: flex;
   gap: 20px;
+  font-size: 18px;
 }
 
 .desktop-menu a {
-  color: #61dafb;
+  color: #dce1e8;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0 10px;
 }
 
 .desktop-menu a:hover {
-  color: #21a1f1;
+  color: #a259ff;
   transform: scale(1.2);
 }
 
@@ -51,7 +52,7 @@
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  color:#61dafb; ; 
+  color:#dce1e8; ; 
 }
 
 /* Mobile*/
@@ -66,7 +67,7 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: #1e1e2f;
+  background-color: #2f3c4d ;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -85,12 +86,12 @@
 
 .mobile-menu a {
   font-size: 1.5rem;
-  color: #61dafb;
+  color: #dce1e8;
   transition: color 1s ease, transform 0.2s ease;
 }
 
 .mobile-menu a:hover {
-  color: #21a1f1;
+  color: #a259ff;
   transform: scale(1.1);
 }
 

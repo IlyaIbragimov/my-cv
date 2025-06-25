@@ -7,18 +7,18 @@ const Intro = () => {
 
         <section className='intro-section' id='intro'>
             <div className='intro-wrapper'>
-                <div className='into-text'>
-                    <div className='into-text-title'>
+                <div className='intro-text'>
+                    <div className='intro-text-title'>
                         <h1>Ilya Ibragimov</h1>
                     </div>
-                    <div className='into-text-subtitle'>
+                    <div className='intro-text-subtitle'>
                         <h3>Technical Support Specialist</h3>
                     </div>
-                    <div className='into-text-info'>
+                    <div className='intro-text-info'>
                         <p>An experienced IT support specialist with over 7 years of experience in support roles.</p>
                     </div>
                 </div>
-                <div className='intro-image'>
+                <div className='intro-image' alt="Intro visual">
                     <img src={intro}/>
                 </div>
             </div>
