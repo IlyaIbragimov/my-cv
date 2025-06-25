@@ -1,0 +1,58 @@
+.intro-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.into-text {
+    margin: 0 40px;
+    width: 50%;
+    justify-content: center ;
+    align-items: center;
+}
+
+.intro-image {
+    width: 50%;
+    
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.into-text-title {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+}
+
+.into-text-subtitle {
+    margin: 0 0 30px 0;
+}
+
+
+/* Mobile*/
+
+
+@media screen and (max-width: 768px) {
+
+.intro-wrapper {
+    flex-direction: column;
+}
+
+.into-text {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 30px;
+}
+
+.intro-image {
+    width: 100%;
+}
+
+.into-text-title {
+    font-size: 20px;
+}
+
+}
