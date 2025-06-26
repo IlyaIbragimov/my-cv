@@ -18,8 +18,8 @@ const Intro = () => {
                         <p>An experienced IT support specialist with over 7 years of experience in support roles.</p>
                     </div>
                 </div>
-                <div className='intro-image' alt="Intro visual">
-                    <img src={intro}/>
+                <div className='intro-image'>
+                    <img src={intro} alt="Intro visual"/>
                 </div>
             </div>
         </section>

@@ -1,0 +1,137 @@
+.about-section {
+    animation: fadeInUp 1s ease;
+    margin: 0 0 20px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  max-height: 600px;
+  background-image: url('../assets/pattern.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    width: 50%;
+    padding: 0 0 0 40px;
+}
+
+.about-image-wrapper {
+    width: 100%;
+    max-width: 502px;
+    margin: 0 80px 0 auto;
+}
+
+.about-image-wrapper img {
+     border-radius: 5%;
+     width: 100%;
+}
+
+.about-text {
+    width: 50%;
+    justify-content: center ;
+    align-items: center;
+    color: #dce1e8;
+    padding: 0 40px;
+}
+
+.about-text-title {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.about-text-info {
+    margin: 0 0 40px 0;
+}
+
+.about-button {
+    margin: 0 0 20px 0;
+}
+
+.about-button a {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 18px;
+}
+
+.about-button-resume {
+    color: black;
+    background-color: #f062c0 ;
+    transition: background-color 0.3s ease;
+}
+
+.about-button-resume:hover {
+    background-color: #a259ff ;
+}
+
+.about-button-contacts {
+    color: #f062c0 ;
+    border: solid 1px #f062c0 ;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.about-button-contacts:hover {
+    border-color: #a259ff;
+    color: #a259ff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image-wrapper {
+        margin: 0 auto;
+    }
+
+    .about-text-title {
+        font-size: 20px;
+    }
+
+
+}
