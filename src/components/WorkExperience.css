@@ -1,5 +1,18 @@
 .experience-section{
     margin: 0 0 20px 0;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 .experience-wrapper {
@@ -29,10 +42,13 @@
 .block-image {
     max-width: 100px;
     align-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .block-image img {
     width: 100%;
+    object-fit: contain;
 }
 
 .block-info {
@@ -48,19 +64,14 @@
     margin: 0 0 15px 0;
 }
 
-.info-text {
-    padding: 0 0 0 20px;
-}
-
 .info-text-list {
-    
+    padding: 0 0 0 20px;
 }
 
 .info-text-list li {
     margin: 0 0 10px 0;
     line-height: 25px;
 }
-
 
 
 /*Mobile*/
