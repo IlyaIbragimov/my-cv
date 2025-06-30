@@ -1,7 +1,8 @@
 import './Intro.css';
 import intro from '../assets/intro.png';
+import { JSX } from 'react';
 
-const Intro = () => {
+const Intro = (): JSX.Element => {
 
     return (
 

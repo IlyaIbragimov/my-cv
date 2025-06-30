@@ -1,7 +1,8 @@
 import './About.css';
-import photo from '../assets/photo.PNG';
+import photo from '../assets/photo.png';
+import { JSX } from 'react';
 
-const About = () => {
+const About = (): JSX.Element => {
     return (
             <section className='about-section' id='about'>
                 <div className='about-wrapper'>

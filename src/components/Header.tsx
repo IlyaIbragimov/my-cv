@@ -1,11 +1,11 @@
 import './Header.css';
 import logo from '../assets/logo.svg'
-import { useState } from 'react';
+import React, {JSX, useState } from 'react';
 
-const Header = () => {
+const Header = (): JSX.Element => {
 
     const [mobileOpen, setMobileOpen] = useState(false);
-
+;
     const toggleMobileMenu = () => {
         setMobileOpen(!mobileOpen);
     }

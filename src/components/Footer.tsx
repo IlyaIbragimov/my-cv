@@ -1,11 +1,9 @@
+import { JSX } from 'react';
 import './Footer.css';
-import github from '../assets/github.svg';
-import linkedin from '../assets/linkedin.svg'
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
 
     return (
-
         <>
         <footer className='footer'>
             <div className='footer-wrapper'>
