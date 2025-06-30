@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Intro from './components/Intro'
 import About from './components/About'
+import WorkExperience from './components/WorkExperience'
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <main className="main-content">
         <Intro />
         <About />
+        <WorkExperience />
       </main>
       <Footer />
     </div>
